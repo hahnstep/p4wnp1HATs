@@ -13,21 +13,17 @@ PIMORONI_BLINKT https://shop.pimoroni.com/products/blinkt
 
 ## Setup
 
-'''
-cd /home/pi/P4wnP1
-git clone https://github.com/hahnstep/p4wnp1HATs
-'''
+  cd /home/pi/P4wnP1
+  git clone https://github.com/hahnstep/p4wnp1HATs
 
 run the install script 
 
 add to setup.cfg before payload section 
 
-''' 
-# ========================
-# Settings for HAT support
-# ========================
+ 
+  # ========================
+  # Settings for HAT support
+  # ========================
 
-PIMORONI_BLINKT=true   # Pimoroni Blinkt ( 8 rgb Leds )
-
-''' 
-
+  PIMORONI_BLINKT=true   # Pimoroni Blinkt ( 8 rgb Leds )
+ 

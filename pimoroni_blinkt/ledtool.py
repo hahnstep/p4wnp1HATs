@@ -9,7 +9,7 @@ from watchdog.events import FileSystemEventHandler
 FILE_TO_WATCH = "/tmp/blink_count"
 
 blinkt.set_brightness(0.05)
-blinkt.set_clear_on_exit(False)
+blinkt.set_clear_on_exit(True)
 
 class Watcher:
     def __init__(self):
@@ -46,7 +46,7 @@ class Handler(FileSystemEventHandler):
 
 		blinkt.set_all(0,0,0) # clear 
 	
-		if count == 255:
+		if count == 0:
     			blinkt.set_all(0,0,0)
   		else:
     			for i in range(count):

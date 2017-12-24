@@ -1,7 +1,6 @@
 #!/bin/sh
 
-#sudo apt-get install -y python-blinkt
-#sudo pip install watchdog
+sudo pip install watchdog
 
 if [ ! -f /etc/systemd/system/P4wnP1-HAT.service ]; then
         echo "Injecting P4wnP1 HAT startup script..."
